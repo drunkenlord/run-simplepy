@@ -11,7 +11,7 @@ architectures:
 
 apps:
   runhello:
-     command: /snap/run-simplepy/current/python-bin
+     command: $SNAP/python-bin
      plugs: [home]
   
 parts:
