@@ -12,7 +12,7 @@ architectures:
 apps:
   runhello:
      command: /snap/run-simplepy/current/python-bin
-
+     plugs: [home]
   
 parts:
   cprog:
