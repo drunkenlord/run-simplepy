@@ -11,7 +11,7 @@ architectures:
 
 apps:
   runhello:
-     command: $SNAP/python-bin
+     command: $SNAP/python-3.8.5-linux-x64
      plugs: [home]
   
 parts:
