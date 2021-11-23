@@ -12,8 +12,12 @@ architectures:
 apps:
   python:
     command: python
+  node:
+    command: node
   runhello:
      command: python
+  runhello1:
+     command: node
 
   
 parts:
@@ -26,3 +30,7 @@ parts:
     python-version: python2 
     python-packages:
       - argparse==1.2.2
+
+  node:
+    plugin: nodejs
+    node-engine: 10.15.1
