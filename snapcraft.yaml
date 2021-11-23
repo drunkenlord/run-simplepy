@@ -20,6 +20,7 @@ parts:
   cprog:
     source: https://github.com/drunkenlord/run-simplepy/releases/download/v1.0.0/py.tar.gz
     plugin: dump
+
   python1:
     plugin: python
     python-version: python2 
