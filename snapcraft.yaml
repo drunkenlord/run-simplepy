@@ -10,10 +10,10 @@ architectures:
   - build-on: amd64
 
 apps:
-  python1:
+  python:
     command: python
   runhello:
-     command: python1
+     command: python
 
   
 parts:
@@ -21,6 +21,7 @@ parts:
     source: https://github.com/drunkenlord/run-simplepy/releases/download/v1.0.0/py.tar.gz
     plugin: dump
 
-  python1:
+  python:
     plugin: python
     python-version: python2 
+     python-packages:
