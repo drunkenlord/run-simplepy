@@ -1,4 +1,4 @@
-name: run-simplepy
+name: run-simp-py
 base: core18
 version: '1.0.0'
 summary: Simple Py
