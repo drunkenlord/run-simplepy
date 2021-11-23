@@ -33,4 +33,4 @@ parts:
 
   node:
     plugin: nodejs
-    node-engine: 10.15.1
+    nodejs-version: 10.15.1
