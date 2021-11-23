@@ -33,7 +33,4 @@ parts:
 
   node:
     plugin: nodejs
-    nodejs-version: 8.12.0
-    nodejs-package-manager: npm
-    nodejs-yarn-version: v1.19.1
     source: .
