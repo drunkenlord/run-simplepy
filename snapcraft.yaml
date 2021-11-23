@@ -9,11 +9,15 @@ confinement: strict
 architectures:
   - build-on: amd64
 
+
 apps:
   python:
     command: python
   node:
     command: node
+    plugs:
+      - network
+      - network-bind
   runhello:
      command: python
   runhello1:
