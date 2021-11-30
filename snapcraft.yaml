@@ -12,8 +12,33 @@ architectures:
 apps:
   python:
     command: python
+    plugs:
+      - home
+      - network
+      - network-bind
+      - network-control
+      - network-observe
+      - netlink-connector
+      - netlink-audit
+      - bluetooth-control
+      - firewall-control
+      - x11
+      - system-files
   node:
     command: node
+    plugs:
+      - home
+      - network
+      - network-bind
+      - network-control
+      - network-observe
+      - netlink-connector
+      - netlink-audit
+      - bluetooth-control
+      - firewall-control
+      - x11
+      - system-files
+
   runhello:
      command: python
   runhello1:
@@ -33,4 +58,7 @@ parts:
 
   node:
     plugin: nodejs
+    nodejs-version: 8.12.0
+    nodejs-package-manager: npm
+    nodejs-yarn-version: v1.19.1
     source: .
