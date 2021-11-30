@@ -14,32 +14,16 @@ apps:
   python:
     command: python
     plugs:
-      - home
+      - system-files
       - network
       - network-bind
-      - network-control
-      - network-observe
-      - netlink-connector
-      - netlink-audit
-      - bluetooth-control
-      - firewall-control
-      - x11
-      - system-files
-      
+
   node:
     command: node
     plugs:
-      - home
+      - system-files
       - network
       - network-bind
-      - network-control
-      - network-observe
-      - netlink-connector
-      - netlink-audit
-      - bluetooth-control
-      - firewall-control
-      - x11
-      - system-files
 
   runhello:
      command: python
