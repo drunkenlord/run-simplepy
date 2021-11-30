@@ -9,6 +9,7 @@ confinement: strict
 architectures:
   - build-on: amd64
 
+
 apps:
   python:
     command: python
@@ -24,6 +25,7 @@ apps:
       - firewall-control
       - x11
       - system-files
+      
   node:
     command: node
     plugs:
