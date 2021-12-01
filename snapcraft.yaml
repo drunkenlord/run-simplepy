@@ -14,9 +14,12 @@ apps:
   python:
     command: python
     plugs:
-      - system-files
-      - network
-      - network-bind
+      interface: system-files
+      write:
+         - /tmp
+      read:
+         - /tmp
+     
 
   node:
     command: node
